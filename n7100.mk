@@ -81,6 +81,24 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
+<<<<<<< HEAD:n7100.mk
+=======
+# Kernel control script
+ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/configs/94kernel:system/etc/init.d/94kernel \
+     $(LOCAL_PATH)/configs/94-kernel.sh:system/addon.d/94-kernel.sh
+
+# Camera
+PRODUCT_PACKAGES += \
+    camera.smdk4x12
+
+# f2fs
+PRODUCT_PACKAGES += \
+	fibmap.f2fs \
+	fsck.f2fs \
+	mkfs.f2fs
+
+>>>>>>> 5c2293a... add boeffla power:i9300.mk
 PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
