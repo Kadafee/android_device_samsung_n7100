@@ -69,6 +69,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/restart_rild.sh:system/bin/restart_rild.sh \
     $(LOCAL_PATH)/configs/rild_restart.rc:system/etc/init/rild_restart.rc
+# idc 
+PRODUCT_COPY_FILES += \
+    device/samsung/n7100/configs/idc/sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    device/samsung/n7100/configs/keylayout/sec_e-pen.kl:system/usr/keylayout/sec_e-pen.kl \
+    device/samsung/n7100/configs/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+
 
 # Product specific Packages
 PRODUCT_PACKAGES += \
