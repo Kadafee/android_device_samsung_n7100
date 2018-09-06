@@ -26,3 +26,6 @@ ro.device.screen_res=720x1280
 
 # Google Assistant
 ro.opa.eligible_device=true
+
+# sdcardfs
+ro.sys.sdcardfs=true
