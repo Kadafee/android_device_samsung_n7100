@@ -29,7 +29,7 @@ echo 1 > /sys/class/misc/boeffla_sound/boeffla_sound
 
 #Speakers tuning
 #This option enables the speaker tuning feature, which improves sound quality of internal speakers, by changing some equalizer settings (bass boost)
-#echo 1 > /sys/class/misc/boeffla_sound/speaker_tuning
+echo 1 > /sys/class/misc/boeffla_sound/speaker_tuning
 
 #Headphones volume
 #This value increases/decreases volume of headphones connected to the device. Does not affect bluetooth connections. First value is left, second value is right channel.
@@ -51,7 +51,7 @@ echo 1 > /sys/class/misc/boeffla_sound/dac_oversampling
 
 #FLL tuning
 #Tunes the audio chip clock engine, to ensure the right power to your headphones and reduce distorsions and bad behaviours
-#echo 1 > sys/class/misc/boeffla_sound/fll_tuning
+echo 1 > sys/class/misc/boeffla_sound/fll_tuning
 
 #Mono downmix
 #This setting changes internal signal handling to switch to mono output for headphones
@@ -76,12 +76,12 @@ echo 1 > /sys/class/misc/boeffla_sound/dac_oversampling
 #AC charge rate
 #This configures the charging rate when you load your phone via an AC charger
 #-->min:0 (off), max:2000, unit:mA, steps:100
-echo 1700 > /sys/kernel/charge_levels/charge_level_ac
+echo 1900 > /sys/kernel/charge_levels/charge_level_ac
 
 #USB charge rate
 #This configures the charging rate when you load your phone via an USB
 #-->min:0 (off), max:2000, unit:mA, steps:100
-echo 500 > /sys/kernel/charge_levels/charge_level_usb
+echo 1900 > /sys/kernel/charge_levels/charge_level_usb
 
 #Wireless charge rate
 #This configures the charging rate when you load your phone via a wireless charging cover
@@ -90,8 +90,8 @@ echo 500 > /sys/kernel/charge_levels/charge_level_wireless
 
 #Ignore unstable power
 #By switching this option to on, the charging logic will NOT reduce the charging current for faulty chargers with unstable power. Use at your own risk!
-echo 0 > /sys/kernel/charge_levels/ignore_unstable_power
+echo 1 > /sys/kernel/charge_levels/ignore_unstable_power
 
 #Ignore safety margin
 #By switching this option to on, the further deduction of 100 mA after detecting a stable charging power will not be done. Use at your own risk!
-echo 0 > /sys/kernel/charge_levels/ignore_safety_margin
+echo 1 > /sys/kernel/charge_levels/ignore_safety_margin
