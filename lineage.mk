@@ -1,6 +1,3 @@
-# Inherit device configuration
-$(call inherit-product, device/samsung/n7100/full_n7100.mk)
-
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
