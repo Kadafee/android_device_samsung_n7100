@@ -16,6 +16,7 @@
 
 # Include common makefile
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 LOCAL_PATH := device/samsung/n7100
 
