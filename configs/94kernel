@@ -15,17 +15,17 @@ echo 1 > /sys/class/misc/boeffla_sound/boeffla_sound
 #Microphone volume in-call
 #This setting allows you to control the microphones sensitivity for phone calls (only)
 #-->min: 0, max: 31, step: 1, default: 25
-#echo xx > /sys/class/misc/boeffla_sound/mic_level_call
+echo 23 > /sys/class/misc/boeffla_sound/mic_level_call
 
 #Microphone volume general
 #This setting allows you to control the microphones sensitivity for all general purposes, apart from calls
 #-->min: 0, max: 31, step: 1, default: 28
-#echo xx > /sys/class/misc/boeffla_sound/mic_level_general
+echo 23 > /sys/class/misc/boeffla_sound/mic_level_general
 
 #Speakers volume
 #This value increases/decreases volume of internal speakers. First value is left, second value is right channel.
 #-->min:0, max:63, steps:1
-#echo "xx yy" > /sys/class/misc/boeffla_sound/speaker_volume
+echo "55 55" > /sys/class/misc/boeffla_sound/speaker_volume
 
 #Speakers tuning
 #This option enables the speaker tuning feature, which improves sound quality of internal speakers, by changing some equalizer settings (bass boost)
