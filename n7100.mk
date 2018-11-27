@@ -105,9 +105,9 @@ endif
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    Stk
+#PRODUCT_PACKAGES += \
+#    com.android.nfc_extras \
+#    Stk
 
 # Samsung symbols
 PRODUCT_PACKAGES += \
