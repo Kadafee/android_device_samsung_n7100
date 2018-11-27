@@ -65,6 +65,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml \
 	$(LOCAL_PATH)/gps_daemon.sh:system/bin/gps_daemon.sh
 
+# RIL subscription workaround
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/restart_rild.sh:system/bin/restart_rild.sh \
+    $(LOCAL_PATH)/configs/rild_restart.rc:system/etc/init/rild_restart.rc
+
 # Product specific Packages
 PRODUCT_PACKAGES += \
     DeviceSettings \
