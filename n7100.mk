@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.smdk4x12
+    sensors.exynos4
 
 # NFC
 PRODUCT_PACKAGES += \
